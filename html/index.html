@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Conteúdo do módulo 3 do tech academy da Start.Se"/>
+    <meta name="keywords" content="HTML, CSS, tags, acessibilidade, tag semantica, meta-tag, head, SEO"/>
+    <meta name="author" content="Dan Vi"/>
+    <meta name="robots" content="noindex, follow, nosnippet,noarchive, noimageindex"/> 
+    <title>Start.Se - Tech Academy</title>
+    <style>
+      table{
+        width: 100%;
+        /* border-collapse: collapse; */
+        border-collapse: separate;
+        border-spacing: 2px 10px ;
+        border: 3px solid goldenrod;
+        color: khaki;
+        background-color: black;
+        empty-cells: hide;
+      }
+      tr, td{
+        border: 2px dotted rgb(36, 151, 151);
+      }
+      tbody{
+        text-align: right;
+      }
+      tbody tr:nth-child(even){
+        background-color: lightgray;
+        color:black;
+      }
+      tbody tr:hover{
+        background-color: lightyellow;
+        color: red;
+      }
+      th, tfoot{
+        border: solid goldenrod;
+      }
+      caption{
+        caption-side: bottom;
+        color: blueviolet;
+
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <nav style="display: inline-block; width:100%">
+        <a style="padding: 10px" href="#semAcessibilidade">Texto sem acessibilidade</a>
+        <a style="padding: 10px" href="#comAcessibilidade">Texto com acessibilidade</a>
+        <a style="padding: 10px" href="#contato">Contato</a><br/>
+        <a style="padding: 10px" href="#ordemInvertida">Texto com ordem invertida</a>
+        <a style="padding: 10px" href="#definicao">Texto com definição</a>
+        <a style="padding: 10px" href="#menorHeader">O menor header</a><br/>
+        <a style="padding: 10px" href="#figureTag">Tag Figure</a>
+        <a style="padding: 10px" href="./form.html#formTag">Tag Form</a>
+        <a style="padding: 10px" href="#footerTag">Tag Footer</a>
+      </nav>
+    </aside>
+    <h1>Módulo III - < tech/academy></h1>
+    <h2>HTML, CSS, tags, SEO e acessibilidade</h2>
+    <h3 id="semAcessibilidade">Elemento textual sem acessibilidade</h3>
+    <p> <b>Lorem</b>, <i>ipsum</i> <u>dolor</u> sit amet consectetur adipisicing elit. Voluptatem eum dolorum quam at unde sapiente omnis soluta cumque ipsa, repellendus porro necessitatibus illum laboriosam sunt! Mollitia, unde. Animi, aperiam quidem.</p>
+    <h3 id="comAcessibilidade">Elemento textual <strong>com</strong> acessibilidade</h3>
+    <p> <strong>Lorem</strong>, <em>ipsum</em> <q>dolor sit amet consectetur adipisicing elit </q>. <blockquote cite="https://br.lipsum.com/">Voluptatem eum dolorum quam at unde sapiente omnis soluta cumque ipsa, repellendus porro necessitatibus illum laboriosam sunt! Mollitia, unde. Animi, aperiam quidem.</blockquote></p>
+    <h3 id="contato">Contato</h3>
+    <p>
+      <address>Rua Alcindo Bueno de Assis, 444</address><br/>
+      <a href="mailto:email@email.com">Enviar email</a><br/>
+      <a href="tel:+5511999888777">Liga para mim!</a><br/>
+      <cite>The Scream</cite> by Edvard Munch. Painted in 1893
+    </p>
+    <h4 id="ordemInvertida">Texto com ordem invertida</h4>
+    <p><bdo dir="rtl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ex, corporis reiciendis saepe accusantium culpa eaque facilis sequi adipisci soluta laudantium fuga sapiente non rerum, fugit quae dolore. Vel, cumque.</bdo></p>
+    <h5 id="definicao">Texto com definição</h5>
+    <p><dfn>Lorem ipsum</dfn> é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.  </p>
+    <h6 id="menorHeader">Eu sou o menor header</h6>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corrupti labore, ullam inventore reiciendis asperiores quasi magnam, ab ex libero fugiat corporis sapiente eveniet repellendus distinctio nesciunt expedita quaerat deleniti.</p>
+    <br/>
+    <figure id="figureTag">
+      <img src="./img/icon.jpg" alt="Imagem de uma arte desenvolvida por Inteligência Artificial" width=100%/>
+      <figcaption>
+        Desenho de um leão estilizado, em diversas cores e adereços a sua juba.
+      </figcaption>
+    </figure>
+    <footer id="footerTag">
+      Eu sou o rodapé
+      <table border="1">
+        <caption>Tabela 1. Essa é a legenda da tabela</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Nome</th>
+          <th rowspan="2">Telefone</th>
+          <th colspan="6">Endereço</th>
+          </tr>
+          <tr>
+            <th>Rua</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>CEP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>+1234567890123</td>
+            <td>Nowhere St</td>
+            <td>Brooklin</td>
+            <td>New york</td>
+            <td>NY</td>
+            <td>012345</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>+1234567890123</td>
+            <td>Nowhere St</td>
+            <td>Brooklin</td>
+            <td>New york</td>
+            <td>NY</td>
+            <td>012345</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>+1234567890123</td>
+            <td>Nowhere St</td>
+            <td>Brooklin</td>
+            <td>New york</td>
+            <td>NY</td>
+            <td>012345</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td></td>
+            <td>Nowhere St</td>
+            <td></td>
+            <td>New york</td>
+            <td>NY</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="8">Para maiores informações, entre em contato conosco</td>
+        </tfoot>
+        
+      </table>
+    </footer>
+  </body>
+</html>
