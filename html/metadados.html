@@ -2,6 +2,11 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8"/> <!-- Esta tag define o padrão de caracteres -->
+    <meta name="description" content="Vendo meta-tags no HTML">
+    <meta name="keyword" content="Meta-tag, tag head, metadados">
+    <meta name="author" content="Dan Vi">
+    <meta name="robots" content="noindex, follow, nosnippet, noarchive, noimageindex"> <!-- É possível usar index, follow -->
+
     <title>Vendo Meta Tags</title> <!-- Metadado para determinar o nome da página no navegador ou nos favoritos -->
     <style>
       body{
@@ -17,10 +22,26 @@
         })
       }
     </script>
+    <base href="https://startse.com/">
   </head>
   <body>
     <h1>Aprendendo sobre Tags no Head</h1>
-    <p id="meuParagrafo">Página estilizada com CSS no head</p>
-    <button id="btnAlterar" type="submit">Alterar paragráfo</button>
+    <section>
+      <h2>Tag script</h2>
+      <p id="meuParagrafo">Página estilizada com CSS no head</p>
+      <button id="btnAlterar" type="submit">Alterar paragráfo</button>
+    </section>
+    <section>
+      <h2>Tag base</h2>
+      <p>Direcionando para outras páginas com a tag base</p>
+      <h3>A StartSe: </h3>
+      <a href="artigos/?utm_source=lms" target="_blank">Artigos</a>
+      <a href="podcasts" target="_blank">Podcasts</a>
+      <a href="webseries" target="_blank">WebSéries</a>
+      <a href="aulas" target="_blank">Palestras</a>
+      <a href="eventos" target="_blank">Eventos</a>
+      <a href="vitrine" target="_blank">Nossas Formações</a>
+      <a href="sobre-nos" target="_blank">A StartSe</a>
+    </section>
   </body>
 </html>
