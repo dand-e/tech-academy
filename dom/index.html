@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoológico de Marte</title>
+</head>
+<body>
+  <h1 id="cabecalhoPagina">Sejam bem vindes ao zoológico de Marte</h1>
+  <p id="aviso">Lista de animais do zoo</p>
+  <ul id="listaAnimais">
+    <li class="mamiferos">Macaco</li>
+    <li class="mamiferos">Tigre</li>
+    <li class="mamiferos">Leão</li>
+    <li class="inseto">Borboleta</li>
+    <li class="anfibio">Rã</li>
+    <li class="aracnideo">Aranha</li>
+  </ul>
+</body>
+<script type="text/javascript">
+  var minhaUL = document.getElementById('listaAnimais')
+  console.log(minhaUL);
+  // OU
+  console.log(minhaUL.children);
+  console.log(minhaUL.firstElementChild);
+  console.log(minhaUL.lastElementChild);
+  var minhaLI = document.getElementsByClassName('aracnideo')[0];
+  console.log(minhaLI.parentElement);
+  console.log(minhaLI.previousSibling)
+</script>
+</html>
