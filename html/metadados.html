@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/> <!-- Esta tag define o padrão de caracteres -->
+    <title>Vendo Meta Tags</title> <!-- Metadado para determinar o nome da página no navegador ou nos favoritos -->
+    <style>
+      body{
+        background: linear-gradient(90deg, lightBlue, white, lightpink);
+        text-align: center;
+      }
+    </style>
+    <script>
+      window.onload = function(){
+        document.getElementById('btnAlterar').addEventListener('click', function(){
+          var meuParagrafo = document.getElementById('meuParagrafo')
+          meuParagrafo.innerHTML = 'Acabei de alterar o parágrafo'
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Aprendendo sobre Tags no Head</h1>
+    <p id="meuParagrafo">Página estilizada com CSS no head</p>
+    <button id="btnAlterar" type="submit">Alterar paragráfo</button>
+  </body>
+</html>
