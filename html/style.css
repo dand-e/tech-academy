@@ -12,6 +12,59 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Início da brincadeira */
+label[for]{
+    background-color: aqua;
+}
+div>.obrigatorio{
+    color: red;
+    font-size: x-large;
+}
+[placeholder]{
+    font-size: x-large;
+}
+div>label{
+    font-size:x-large;
+}
+a[href*=edu]{
+    background: green;
+    color: yellow;
+}
+
+
+/* PSEUDOCLASSES
+a:link{}
+a:visited{}
+a:hover{}
+a:active{}
+input:focus{}
+input:checked{}
+input:required{}
+:first-child
+:last-child
+:only-child
+:disabled
+:empty
+*/
+
+/* PSEUDOELEMENTOS
+::first-letter
+::first-line
+::marker
+::selection
+*/
+
+option[value=S]{
+    color: blue;
+}
+option[value=R]{
+    color: red;
+}
+option[value=E]{
+    color: green; 
+}
+/* Final da brincadeira */
+
 a{
     text-decoration: none;
 }
@@ -57,7 +110,7 @@ p {
     position: relative;
     z-index: 1;
 }
-#presentation h1{
+#presentation > h1{
     display: block;
     width: fit-content;
     font-size: 5rem;
@@ -76,7 +129,7 @@ p {
     animation: text_reveal_name .5s ease forwards;
     animation-delay: 2.8s;
 }
-#presentation .cta{
+#presentation.cta{
     display: inline-block;
     padding: 10px 30px;
     color: gold;
