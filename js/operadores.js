@@ -1,0 +1,10 @@
+let x = 10;
+console.log (x);
+let a = ++x;
+console.log (a);
+let b = x++;
+console.log (b);
+console.log (x);
+b = --x;
+console.log (b);
+console.log (x);

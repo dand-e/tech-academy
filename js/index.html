@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início ao JS</title>
+</head>
+<body>
+  <h1>Introdução à Linguagem JavaScript</h1>
+  <p id="p1"></p>
+  <form id="formularioLogin" onsubmit="bemVindo(); return false;">
+    <label for="nome">Nome completo: </label>
+    <input type="text" name="nome" id="nome" placeholder="John Doe" required/><br/>
+    <label for="senha">Senha: </label>
+    <input type="password" name="senha" id="senha" placeholder="Senha" required/><br/>
+    <input type="submit" value="Entrar"/>
+  </form><br/>
+  <p>Escolha uma cor de fundo: </p>
+  <select id="coresFundo" onchange="mudaFundo()">
+    <option value="white" selected>Branco</option>
+    <option value="blue">Azul</option>
+    <option value="yellow">Amarelo</option>
+    <option value="red">Vermelho</option>
+  </select><br/><br/>
+
+  <button onclick="print()">Imprimir</button><br/><br/>
+
+  <!-- JS interno -->
+  <script>
+    alert('Olá! Seja bem-vinde!!');
+    document.write('Esse é um texto adicionado a partir do JS interno')
+  </script>
+  <!-- JS externo -->
+  <script src="index.js"></script>
+</body>
+</html>
